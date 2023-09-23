@@ -1,0 +1,42 @@
+// breakpoints
+$desktop: 1280px;
+
+// colors
+$white: #FFFFFF;
+$black: #000000;
+
+//Typographic
+$fontFamily: google fonts, sans-serif;
+
+@mixin text($font-size, $line-height, $font-weight: 400){
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+%main-title {
+  @include text(44px, 130%);
+}
+
+//flex
+@mixin flex($direction: row, $justify: flex-start, $align: flex-start) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+//animation buttons
+%hover {
+  transition: .8s ease-in;
+  &:hover {
+    cursor: pointer;
+    opacity: .3;
+  }
+}
+
+//margin
+%zero-spaces {
+  margin: 0;
+  padding: 0;
+}
