@@ -7,7 +7,7 @@ import api from '../../utils/api';
 function App() {
     useEffect(() => {
         handleGetSalesData();
-        handleGetForeCastData();
+        handleGetForecastData();
         handleGetStoresData();
         handleGetCategoriesData();
     }, []);
@@ -17,8 +17,8 @@ function App() {
         console.log(salesData, 'salesData');
     };
 
-    const handleGetForeCastData = () => {
-        const foreCastData = api.foreCastData();
+    const handleGetForecastData = () => {
+        const foreCastData = api.forecastData();
         console.log(foreCastData, 'foreCastData');
     };
 
@@ -34,9 +34,9 @@ function App() {
 
     return (
         <div className={styles.page}>
-            <Routes>
-                <Route path="/" element={<Dashboard />} />
-            </Routes>
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+          </Routes>
         </div>
     );
 }
