@@ -1,7 +1,7 @@
-import categoriesData from './categories.json';
-import foreCastData from './forecast_archive.json';
+import { categoriesData } from './categories';
+import { forecastData } from './forecast_archive';
 import salesData from './sales.json';
-import storesData from './stores.json';
+import { storesData } from './stores';
 import { BASE_URL, HEADERS} from './constants';
 import {HttpHeaders} from './types';
 
@@ -20,8 +20,8 @@ class Api {
     }
 
     //имитация прогнозов
-    public foreCastData() {
-        return foreCastData;
+    public forecastData() {
+        return forecastData;
     }
 
     //имитация базы данных с магазинами
