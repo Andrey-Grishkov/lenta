@@ -2,14 +2,18 @@
 $desktop: 1280px;
 
 // colors
-$white: #FFFFFF;
+$white: #ffffff;
 $black: #000000;
-$blue: blue;
+
+$dark-blue: #001e64;
+$main-blue: #003c96;
+$light-blue: #b4c8ff;
+$bluish: rgba(227, 234, 255, 0.4);
 
 //Typographic
 $fontFamily: google fonts, sans-serif;
 
-@mixin text($font-size, $line-height, $font-weight: 400){
+@mixin text($font-size, $line-height, $font-weight: 400) {
   font-size: $font-size;
   line-height: $line-height;
   font-weight: $font-weight;
@@ -29,10 +33,10 @@ $fontFamily: google fonts, sans-serif;
 
 //animation buttons
 %hover {
-  transition: .8s ease-in;
+  transition: 0.8s ease-in;
   &:hover {
     cursor: pointer;
-    opacity: .3;
+    opacity: 0.3;
   }
 }
 
